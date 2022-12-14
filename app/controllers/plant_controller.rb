@@ -13,6 +13,8 @@ class PlantController < ApplicationController
     end
 
     def create
+        # Plant.create(name: params[:name], price: params[:price])
+
         plant = Plant.create(plant_params)
         # byebug 
         #displaying it in our frontend
