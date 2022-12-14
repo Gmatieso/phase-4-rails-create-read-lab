@@ -16,7 +16,7 @@ class PlantController < ApplicationController
         plant = Plant.create(plant_params)
         # byebug 
         #displaying it in our frontend
-        render json: plant, status: :ok 
+        render json: plant, status: :created 
     end
 
     #When a user tries to add extra attribute it wont permit 
